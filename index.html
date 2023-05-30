@@ -1,0 +1,50 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8">
+  <title>Logos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 5px 1em;
+      text-align: center;
+      text-decoration: 0;
+      font-family: system-ui;
+      list-style-type: none;
+      font-weight: 500;
+      font-size: 1.1em;
+    }
+    a {color: #000;}
+    a:hover {color: #fff;}
+    li>a:hover {background-color: #000;}
+  </style>
+</head>
+<ul id="links">
+  <li><a href="TikTok.png">TikTok</a></li>
+  <li><a href="Twitch.png">Twitch</a></li>
+  <li><a href="Twitter.png">Twitter</a></li>
+  <li><a href="YouTube.png">YouTube</a></li>
+  <li><a href="Amazon.png">Amazon</a></li>
+  <li><a href="Discord.png">Discord</a></li>
+  <li><a href="Google.png">Google</a></li>
+  <li><a href="GoogleKeep.png">Google Keep</a></li>
+  <li><a href="Instagram.png">Instagram</a></li>
+  <li><a href="NameMC.png">NameMC</a></li>
+  <li><a href="Reddit.png">Reddit</a></li>
+</ul>
+
+<script>
+  let ul = document.getElementById('links');
+  let li = ul.getElementsByTagName('li');
+
+  let array = [];
+  for (let i = 0; i < li.length; i++) {
+    array.push(li[i].innerHTML);
+  }
+
+  array.sort();
+
+  for (let i = 0; i < li.length; i++) {
+    li[i].innerHTML = array[i];
+  }
+</script>
+</html>
